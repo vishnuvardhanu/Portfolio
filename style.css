@@ -1,0 +1,394 @@
+body{
+    margin: 0;
+    padding:0;
+    background-color: #202020;
+    color: white;
+}
+.nav
+{
+    width: 100%;
+    height: 50px;
+    /* background-color: rgb(13, 29, 78); */
+    background-color: #202020;
+    color: #fed700;
+    display: flex;
+    justify-content: left;
+    box-shadow: 0px 3px 5px black;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+.info div{
+    margin: 10px;
+    padding: 5px;
+}
+.info{
+    height: 50px;
+    width: 370px;
+    display: flex;
+    position: absolute;
+    right: 1px;
+}
+.info div a{
+    text-decoration: none;
+    color: #fed700;
+}
+.name{
+    padding: 10px;
+    font-family: 'Protest Revolution', sans-serif;
+    font-size: 30px;
+    color: white;
+}
+.name a{
+    text-decoration: none;
+    color: white;
+}
+.info div:hover{
+    background-color: rgb(100, 100, 100);
+    color: white;
+    border-radius: 4px;
+}
+#check{
+    display: none;
+}
+.btn_one{
+    position: absolute;
+    display: none;
+    right: 12px;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px;
+    background-color: #fed700;
+}
+.drop div{
+    width: 100%;
+    background-color:#202020;
+    text-align: center;
+    height: 20px;
+    padding: 10px;
+    color: white;
+    z-index: 2;
+}
+.drop{
+    position: absolute;
+    width: 30%;
+    height: fit-content;
+    top: -150px;
+    left: 65%;
+    z-index: -1;
+    transition: all 0.3s linear;
+    display: flex;
+    flex-direction: column;
+}
+.drop div:hover{
+    background-color: #fed700;
+    color: white;
+}
+
+@media screen and (max-width:650px){
+    .info{
+        display: none;
+    }
+    .btn_one{
+        display: flex;
+    }
+    #check:checked + .drop{
+            display: flex;
+            top: 50px;
+            z-index: 2;
+    }
+}
+
+/* Home */
+
+.home{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    margin-top: 100px;
+    margin-bottom: 200px;
+
+}
+.hmcont{
+    width: 90%;
+    display:flex;
+    flex-wrap: wrap;
+}
+.data-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    text-align: justify;
+}
+.data{
+    width: 70%;
+}
+.data h1{
+    font-size: 48px;
+    color:#fed700;
+    box-sizing: 1px 2px 5px rgb(87, 231, 200);
+}
+.data p{
+    font-size: 16px;
+    line-height: 24px;
+}
+.pic-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin-top: 30px;
+    width: 30%;
+}
+.pic{
+    height: 300px;
+    width: 250px;
+    overflow: hidden;
+    background-color:#fee243;
+    border-radius: 73% 23% 53% 47% / 41% 51% 49% 59%;
+    /* box-shadow: 1px 1px 5px #fed700; */
+  }
+  .pic img{
+    height: 139.53%;
+    filter: drop-shadow(3px 2px 6px #202020);
+    
+  }
+  .linekedinlogo{
+    color: #202020;
+  }
+  @media all and (max-width:730px) {
+    .home{
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .hmcont{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .pic-cont{
+        margin-bottom: 50px;
+        width: 280px;
+    }
+    .data-cont{
+        width: 100%;
+        text-align: justify;
+    }
+    .data h1{
+        font-size: 32px;
+    }
+  }
+.resumebtn button{
+    padding: 12px 25px;
+    background-color:#202020;
+    color: white;
+    border: 2px solid #fed700;
+    border-radius: 20px;
+    font-size: 15px;
+    font: bold;
+    margin-left: 20px;
+}
+.resumebtn button:hover{
+    color: #202020;
+    background-color: #fed700;
+}
+
+  /* About */
+
+  .about{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    margin-bottom: 150px;
+  }
+  .abtcont{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .abt-data{
+    width: 45%;
+    padding: 10px;
+    text-align: justify;
+    font-size: 18px;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 15px;
+    height: 380px;
+    margin: 10px;
+  }
+  .abt-data li{
+    margin-bottom: 20px;
+  }
+  .abt-data ul{
+    padding-left: 5px;
+  }
+  .edu-cont{
+    width: 45%;
+    border:2px solid white;
+    border-radius: 5px;
+    padding: 15px;
+    height: 380px;
+  }
+  .edu-cont div{
+    margin-bottom: 35px;
+    border-radius: 5px;
+  }
+  .edu-cont div h3{
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+@media all and (max-width:1050px) {
+    .abt-data{
+        height: fit-content;
+    }
+}
+@media all and (max-width:900px) {
+    .abtcont{
+        display:flex;
+        flex-direction: column;
+    }
+    .abt-data{
+        width: 80%;
+        margin-bottom: 50px;
+        font-size: 16px;
+    }
+    .edu-cont{
+        width: 80%;
+        height: fit-content;
+        font-size: 16px;
+    }
+}
+.abt-data h2{
+    color: #fed700;
+    font-size: 30px;
+}
+.edu-cont h2{
+    color: #fed700;
+    font-size: 30px;
+
+    margin-top: 5px;
+}
+
+/* Skills */
+.skills{
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.sklcont{
+    width: 85%;
+}
+.skls{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 19px;
+}
+.box{
+    padding: 75px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    border: 1px solid white;
+    margin: 10px;
+}
+.box i{
+    padding: 5px;
+    color: #fed700;
+}
+.box:hover{
+    background-color: #fed700;
+    color: #202020;
+}
+.box:hover i{
+    color: #202020;
+}
+@media all and (max-width:450px)
+{
+    .box{
+        padding: 35px;
+    }
+}
+
+/* Projects */
+.projects{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.projects h1{
+    color: #fed700;
+    font: 35px;
+}
+.procont{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.probox{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin: 20px;
+}
+.probox i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #fed700;
+    border-radius: 50%;
+    color: #202020;
+}
+.probox h3{
+    font-size: 28px;
+}
+.probox div{
+    text-align: justify;
+    width: 80%;
+    line-height: 25px;
+}
+.link{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.link button{
+    width: 70px;
+    height: 35px;
+    background-color:#fed700;
+    border: 0;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.link a{
+    text-decoration: none;
+    color:#202020;
+    font-size: 15px;
+    width: 70px;
+}
