@@ -392,3 +392,96 @@ body{
     font-size: 15px;
     width: 70px;
 }
+
+/* Contact form */
+.contform{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contfm{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+.fm h1{
+    color: #fed700;
+    font-size: 40px;
+    margin: 1px;
+}
+.fm p{
+    margin-top: 2px;
+}
+.fm input,.fm textarea{
+    width: 90%;
+    padding: 10px;
+    height: 28px;
+    margin-bottom: 10px;
+    resize: none;
+    border: 0.8px solid none;
+}
+.fm textarea{
+    height: 40px;
+    margin-bottom: 15px;
+}
+.msg{
+    background-color: #fed700;
+    color: #202020;
+    padding: 15px;
+    width: 150px;
+    border: 0;
+    transition: ease-out 0.3s;
+    box-sizing: inset 0 0 0 0 #fed700;
+}
+.msg:hover{
+    box-shadow: inset 150px 0 0 0  #202020;
+    border: 1px solid #fed700;
+    color: #fed700;
+}
+/* Footer */
+.foot{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100px;
+}
+.ftcont{
+    width: 50%;
+    border-top: 1px solid #555555;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+.linksft a{
+    text-decoration: none;
+    color: #555555;
+    margin: 20px;
+}
+.linksft a :hover{
+    color: #fee243;
+}
+.ftcont p{
+    font-size: 15px;
+    color: #686868;
+}
+
+@media all and (max-width:480px)
+{
+    .ftcont p{
+        font-size: 13px;
+    }
+}
