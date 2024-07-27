@@ -24,36 +24,22 @@
             <div><a href="#projects">Project</a></div>
             <div><a href="#contact">Contact</a></div>
         </div>
-
-        
-        <!-- <div class="btn_one">
-        <label for="check" style="color: white">
-          <i class="fa-solid fa-bars"></i>
-        </label>
-        </div>
- -->
-        <!-- Remove the btn and check box it will funtion normally as before -->
     </div>
-    <!-- <input type="checkbox" id="check" />
-    <div class="drop">
-        <div class="#home">Home</div>
-        <div class="#about">About</div>
-        <div class="#skills">Skills</div>
-        <div class="#projects">Project</div>
-        <div class="#contact">Contact</div>
-    </div> -->
 
     <!-- Home -->
     <div class="home" id="home">
         <div class="hmcont">
             <div class="data-cont">
                 <div class="data">
-                    <h4>Hi, I'm</h4>
+                    <h2>Hi, I'm</h2>
                     <h1>Vishnu Vardhan</h1>
+                    <div class="container">
+                        
+                    </div>
                     <p>Welcome to my portfolio website! I'm a passionate and aspiring software engineer with a strong desire to create innovative solutions and push the boundaries of technology With a deep love for coding and problem-solving, I am constantly seeking opportunities to learn and grow in this ever-evolving field</p>
                     <div class="btn-group">
                         <a href="https://www.linkedin.com/in/vishnu-vardhan-udayagiri-725720234/" class="linkedinlogo" target="_blank"><i class="fa-brands fa-linkedin fa-2xl" style="color:#fed700; font-size: 40px;"></i></a>
-                        <a href="https://drive.google.com/file/d/1E242TMpjeBe5p7UaWhflPBgh8H9BFhBt/view?usp=sharing" class="resumebtn" target="_blank"><button>Resume</button></a>
+                        <a href="https://drive.google.com/file/d/1Oj_3T_aP_qmDWTd_TB4O8ufFxxts2hgW/view?usp=sharing" class="resumebtn" target="_blank"><button>Resume</button></a>
                     </div>
                 </div>
             </div>
@@ -164,12 +150,14 @@
     <!-- Contact Form -->
     <div class="contform" id="contact">
         <div class="contfm">
-            <form action="https://formspree.io/udayagirivishnuvardhan@gmail.com" method="post" class="fm">
+            <form action="https://api.web3forms.com/submit" method="post" class="fm">
+                <input type="hidden" name="access_key" value="7c3506f9-a7b3-4aeb-928c-e093061b1b64">
+
                 <h1>Contact Me</h1>
                 <p>Get In Touch</p>
-                <input type="text" placeholder="Name" class="namefm" required>
-                <input type="email" placeholder="Email" class="mailfm" required>
-                <input type="text" placeholder="Subject" class="subfm" required>
+                <input type="text" name="name" placeholder="Name" class="namefm" required>
+                <input type="email" name="email" placeholder="Email" class="mailfm" required>
+                <input type="text" name="subject" placeholder="Subject" class="subfm">
                 <textarea name="message" placeholder="Message" cols="30" rows="10" class="msgfm"></textarea>
                 <button class="msg">Send Message</button>
             </form>
@@ -187,5 +175,7 @@
             </div>
         </div>
      </div>
+
+     <script src="index.js"></script>
 </body>
 </html>

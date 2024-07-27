@@ -3,6 +3,7 @@ body{
     padding:0;
     background-color: #202020;
     color: white;
+    scroll-behavior: smooth;
 }
 .nav
 {
@@ -129,7 +130,17 @@ body{
 .data h1{
     font-size: 48px;
     color:#fed700;
+    margin-bottom: 20px;
+    margin-top: 20px;
     box-sizing: 1px 2px 5px rgb(87, 231, 200);
+}
+.data h2{
+    margin: 0;
+}
+.container h1{
+    font-size: 40px;
+    margin-top: 10px;
+    color: #fed700;
 }
 .data p{
     font-size: 16px;
@@ -150,11 +161,14 @@ body{
     background-color:#fee243;
     border-radius: 73% 23% 53% 47% / 41% 51% 49% 59%;
     /* box-shadow: 1px 1px 5px #fed700; */
+    position: relative;
   }
   .pic img{
-    height: 139.53%;
+    height: 120%;
     filter: drop-shadow(3px 2px 6px #202020);
-    
+    position: absolute;
+    top: -10px;
+    left: -7px;
   }
   .linekedinlogo{
     color: #202020;
@@ -290,7 +304,7 @@ body{
     text-align: center;
 }
 .sklcont{
-    width: 85%;
+    width: 89%;
 }
 .skls{
     display: flex;
@@ -339,6 +353,7 @@ body{
     font: 35px;
 }
 .procont{
+    height: 530px;
     width: 90%;
     display: flex;
     justify-content: center;
@@ -346,6 +361,7 @@ body{
     flex-wrap: wrap;
 }
 .probox{
+    height: 100%;
     width: 300px;
     display: flex;
     align-items: center;
@@ -354,6 +370,7 @@ body{
     border: 2px solid white;
     border-radius: 5px;
     margin: 20px;
+    position: relative;
 }
 .probox i{
     display: flex;
@@ -377,6 +394,8 @@ body{
     display: flex;
     justify-content: space-around;
     margin-top: 30px;
+    position: absolute;
+    bottom: 40px;
 }
 .link button{
     width: 70px;
