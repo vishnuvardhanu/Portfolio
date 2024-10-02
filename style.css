@@ -343,6 +343,7 @@ body{
 /* Projects */
 .projects{
     width: 100%;
+    height:auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -353,7 +354,8 @@ body{
     font: 35px;
 }
 .procont{
-    height: 530px;
+    height: auto;
+    min-height: 530px;
     width: 90%;
     display: flex;
     justify-content: center;
@@ -361,7 +363,7 @@ body{
     flex-wrap: wrap;
 }
 .probox{
-    height: 100%;
+    height: 530px;
     width: 300px;
     display: flex;
     align-items: center;
@@ -371,6 +373,11 @@ body{
     border-radius: 5px;
     margin: 20px;
     position: relative;
+}
+@media screen and (max-width:600px) {
+    .probox{
+        padding: 10px;
+    }
 }
 .probox i{
     display: flex;
